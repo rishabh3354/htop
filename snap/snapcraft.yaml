@@ -1,0 +1,77 @@
+name: htop-pro
+base: core18 # the base snap is the execution environment for this snap
+version: '1.0' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Interactive Light weight system-monitor with Internet speed, Cpu and Ram usage utility
+description: |
+  A Light weight desktop application for Monitoring System with Internet speed, Cpu and RAM in cool graphics.
+grade: stable # must be 'stable' to release into candidate/stable channels  / before dev use devel
+confinement: strict # use 'strict' once you have the right plugs and slots / before dev use devmode
+
+icon: snap/gui/icon.png
+
+architectures:
+  - build-on: [amd64]
+
+apps:
+  htop:
+    command: bin/desktop-launch python3 $SNAP/htop.py
+    plugs:
+      - home
+      - gsettings
+      - network
+      - network-bind
+      - desktop
+      - desktop-legacy
+      - x11
+      - unity7
+      - wayland
+      - opengl
+      - hardware-observe
+      - network-status
+    desktop: htop.desktop
+
+plugs:
+  gsettings:
+  gtk-3-themes:
+    interface: content
+    target: $SNAP/data-dir/themes
+    default-provider: gtk-common-themes
+  icon-themes:
+    interface: content
+    target: $SNAP/data-dir/icons
+    default-provider: gtk-common-themes
+  sound-themes:
+    interface: content
+    target: $SNAP/data-dir/sounds
+    default-provider: gtk-common-themes
+  pyqt5-runtime:
+    interface: content
+    target: $SNAP/pyqt5-runtime
+    default-provider: pyqt5-runtime
+
+
+parts:
+  desktop-gui:
+    plugin: dump
+    source: src/
+    override-build: |
+      snapcraftctl build
+      sed -i 's|Icon=.*|Icon=${SNAP}/meta/gui/icon.png|g' ${SNAPCRAFT_PART_SRC}/htop.desktop
+      mkdir -p ${SNAPCRAFT_PART_INSTALL}/usr/share/applications/
+      cp -rf ${SNAPCRAFT_PART_SRC}/htop.desktop ${SNAPCRAFT_PART_INSTALL}/usr/share/applications/htop.desktop
+
+
+  snap-launcher:
+    plugin: dump
+    source: snap_launcher/
+
+  htop:
+      plugin: python
+      python-version: python3
+      source: .
+      python-packages:
+        - psutil
+        - py-cpuinfo
+        - cryptography
+        - requests
+      build-attributes: [ keep-execstack ]

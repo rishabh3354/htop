@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+GenericName=htop-pro
+Name=Glances
+Type=Application
+Icon=htop.png
+Keywords=internetspeed;systemmoniter;ramusage;cpuusage;networkbandwidth;system-monitor;
+Exec=htop %F
+Categories=Utility;Qt;
+Terminal=false
+Name[en_IN]=Htop
