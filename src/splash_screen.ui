@@ -108,7 +108,7 @@
         <widget class="QLabel" name="labelTitle">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
+           <family>URW Gothic</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -117,7 +117,7 @@
 color: #FFFFFF</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;HTOP PRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;HTOP Pro&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -160,7 +160,7 @@ color: #FFFFFF</string>
          </property>
          <property name="font">
           <font>
-           <family>Segoe UI</family>
+           <family>URW Gothic</family>
            <pointsize>9</pointsize>
           </font>
          </property>

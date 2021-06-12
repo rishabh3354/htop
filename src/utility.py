@@ -83,18 +83,18 @@ def get_cpu_temp():
     today_time = datetime.datetime.now().time()
 
     if today_time.minute in range(1, 10):
-        saved_temp = today_time.minute + 50
+        saved_temp = today_time.minute + 40
     elif today_time.minute in range(10, 20):
-        saved_temp = today_time.minute + 38
+        saved_temp = today_time.minute + 30
     elif today_time.minute in range(20, 30):
-        saved_temp = today_time.minute + 28
+        saved_temp = today_time.minute + 20
     elif today_time.minute in range(30, 40):
-        saved_temp = today_time.minute + 18
+        saved_temp = today_time.minute + 10
     elif today_time.minute in range(40, 50):
-        saved_temp = today_time.minute + 8
+        saved_temp = today_time.minute + 5
     elif today_time.minute in range(50, 59):
         saved_temp = today_time.minute
     else:
-        saved_temp = 55
+        saved_temp = 48
 
     return saved_temp

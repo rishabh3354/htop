@@ -56,7 +56,7 @@ class Ui_SplashScreen(object):
         self.gridLayout.setObjectName("gridLayout")
         self.labelTitle = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Segoe UI")
+        font.setFamily("URW Gothic")
         font.setPointSize(12)
         self.labelTitle.setFont(font)
         self.labelTitle.setStyleSheet("background-color: none;\n"
@@ -78,7 +78,7 @@ class Ui_SplashScreen(object):
         self.labelLoadingInfo.setMinimumSize(QtCore.QSize(0, 20))
         self.labelLoadingInfo.setMaximumSize(QtCore.QSize(16777215, 20))
         font = QtGui.QFont()
-        font.setFamily("Segoe UI")
+        font.setFamily("URW Gothic")
         font.setPointSize(9)
         self.labelLoadingInfo.setFont(font)
         self.labelLoadingInfo.setStyleSheet("QLabel{\n"
@@ -114,6 +114,6 @@ class Ui_SplashScreen(object):
     def retranslateUi(self, SplashScreen):
         _translate = QtCore.QCoreApplication.translate
         SplashScreen.setWindowTitle(_translate("SplashScreen", "MainWindow"))
-        self.labelTitle.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-weight:600;\">HTOP PRO</span></p></body></html>"))
+        self.labelTitle.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-size:14pt;\">HTOP Pro</span></p></body></html>"))
         self.labelPercentage.setText(_translate("SplashScreen", "<p><span style=\" font-size:68pt;\">0</span><span style=\" font-size:58pt; vertical-align:super;\">%</span></p>"))
         self.labelLoadingInfo.setText(_translate("SplashScreen", "LOADING..."))
