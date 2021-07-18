@@ -9,7 +9,7 @@ from htop_threads import DummyDataThread, CpuThread, RamThread, NetSpeedThread
 from account_threads import SaveLocalInToken, RefreshButtonThread
 from accounts import ApplicationStartupTask, days_left, get_user_data_from_local, check_for_local_token
 from ui_splash_screen import Ui_SplashScreen
-from style import theme_1, theme_2
+from style import theme_1
 from ui_main import Ui_MainWindow
 from utility import UtilsInfo
 
@@ -39,16 +39,25 @@ class MainWindow(QMainWindow):
         self.load_settings()
         self.ui.stackedWidget.setCurrentIndex(0)
 
+        self.theme_selected = 1
+        self.ui.drop_shadow_frame.setStyleSheet(theme_1)
+        self.ui.page_credits.setStyleSheet(theme_1)
+        self.ui.account_page.setStyleSheet(theme_1)
+
         qtRectangle = self.frameGeometry()
         centerPoint = QDesktopWidget().availableGeometry().center()
         qtRectangle.moveCenter(centerPoint)
         self.move(qtRectangle.topLeft())
 
         # home buttons
-        self.ui.home_button.clicked.connect(self.credit_button_clicked)
+        self.ui.home_button_2.clicked.connect(self.credit_button_clicked)
         self.ui.monitor_button.clicked.connect(self.monitor_button_clicked)
         self.ui.setting_button.clicked.connect(self.setting_button_clicked)
         self.ui.account_button.clicked.connect(self.account_button_clicked)
+        self.ui.speed.clicked.connect(self.monitor_button_clicked)
+        self.ui.setting.clicked.connect(self.setting_button_clicked)
+        self.ui.account.clicked.connect(self.account_button_clicked)
+
         # App setting buttons
         self.ui.horizontalSlider.valueChanged.connect(self.change_frequency_net)
         self.ui.horizontalSlider_2.valueChanged.connect(self.change_frequency_cpu)
@@ -56,8 +65,6 @@ class MainWindow(QMainWindow):
         self.ui.comboBox_2.currentIndexChanged.connect(self.change_net_speed_unit)
         self.ui.comboBox_3.currentIndexChanged.connect(self.change_temp_unit)
         # theme setup
-        self.ui.theme1.clicked.connect(self.theme1_clicked)
-        self.ui.theme2.clicked.connect(self.theme2_clicked)
 
         self.count = 1  # theme set counter
         self.setWindowFlags(Qt.FramelessWindowHint)
@@ -107,7 +114,7 @@ class MainWindow(QMainWindow):
             self.load_annimation_data()
             self.check_your_plan()
             self.setValue(0, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
-                          "rgba(85, 255, 127, 255)", 100, True)
+                          "rgba(6, 60, 89, 1)", 100, True)
 
     def setValue(self, sliderValue, labelPercentage, progressBarName, color, net_value=50, net=False):
         if net:
@@ -164,12 +171,6 @@ class MainWindow(QMainWindow):
             self.ram_frequency = FREQUENCY_MAPPER.get(int(self.settings.value("ram_frequency")), 4)
             self.ui.horizontalSlider_3.setValue(int(self.settings.value("ram_frequency")))
             self.ui.label_16.setText(str(FREQUENCY_MAPPER.get(int(self.settings.value("ram_frequency")), "1")) + " Sec")
-        if self.settings.contains("selected_theme"):
-            self.theme_selected = int(self.settings.value("selected_theme"))
-            if self.theme_selected == 1:
-                self.theme1_clicked()
-            else:
-                self.theme2_clicked()
 
     def save_settings(self):
         self.settings.setValue("net_speed_unit", self.ui.comboBox_2.currentText())
@@ -177,7 +178,6 @@ class MainWindow(QMainWindow):
         self.settings.setValue("net_frequency", self.ui.horizontalSlider.value())
         self.settings.setValue("cpu_frequency", self.ui.horizontalSlider_2.value())
         self.settings.setValue("ram_frequency", self.ui.horizontalSlider_3.value())
-        self.settings.setValue("selected_theme", self.theme_selected)
 
     def default_frequency(self):
         self.ui.horizontalSlider.setValue(4)
@@ -269,12 +269,12 @@ class MainWindow(QMainWindow):
         self.net_speed_thread.start()
 
     def setProgress_cpu(self, value):
-        self.setValue(value[0], self.ui.labelPercentageCPU_5, self.ui.circularProgressCPU_5, "rgba(85, 170, 255, 255)")
+        self.setValue(value[0], self.ui.labelPercentageCPU_5, self.ui.circularProgressCPU_5, "rgba(6, 60, 89, 1)")
         html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:600; color:#eeeeec;">TEMP: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_9.setText(html.replace("{VALUE}", str(value[1])))
 
     def setProgress_ram(self, value):
-        self.setValue(value[0], self.ui.labelPercentageRAM_2, self.ui.circularProgressRAM_2, "rgba(255, 0, 127, 255)")
+        self.setValue(value[0], self.ui.labelPercentageRAM_2, self.ui.circularProgressRAM_2, "rgba(6, 60, 89, 1)")
         html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:600; color:#eeeeec;">TOTAL: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_10.setText(html.replace("{VALUE}", value[1]))
 
@@ -282,7 +282,7 @@ class MainWindow(QMainWindow):
         graph_value = self.get_graph_value(value)
         show_value = float(value[0][0])
         self.setValue(show_value, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
-                      "rgba(85, 255, 127, 255)", graph_value, True)
+                      "rgba(6, 60, 89, 1)", graph_value, True)
         html = '<html><head/><body><p><span style=" font-size:10pt; font-weight:600; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_5.setText(html.replace("{VALUE}", value[0][1]))
 
@@ -319,13 +319,13 @@ class MainWindow(QMainWindow):
     def setProgress_dummy_data(self, value):
         value = int(value[0])
         self.setValue(value, self.ui.labelPercentageCPU_5, self.ui.circularProgressCPU_5,
-                      "rgba(85, 170, 255, 255)")
+                      "rgba(6, 60, 89, 1)")
 
         self.setValue(value, self.ui.labelPercentageRAM_2, self.ui.circularProgressRAM_2,
-                      "rgba(255, 0, 127, 255)")
+                      "rgba(6, 60, 89, 1)")
 
         self.setValue(value, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
-                      "rgba(85, 255, 127, 255)", value, True)
+                      "rgba(6, 60, 89, 1)", value, True)
 
     def credit_button_clicked(self):
         self.ui.stackedWidget.setCurrentIndex(3)
@@ -466,24 +466,6 @@ class MainWindow(QMainWindow):
             return False
         return True
 
-    def theme1_clicked(self):
-        self.theme_selected = 1
-        self.ui.drop_shadow_frame.setStyleSheet(theme_1)
-        self.ui.page_credits.setStyleSheet(theme_1)
-        self.ui.account_page.setStyleSheet(theme_1)
-        self.ui.label_13.setStyleSheet("color: rgb(220, 220, 220);\n"
-                                       "background-color: rgb(98, 98, 162);\n"
-                                       "border-radius: 20px;")
-
-    def theme2_clicked(self):
-        self.theme_selected = 2
-        self.ui.drop_shadow_frame.setStyleSheet(theme_2)
-        self.ui.page_credits.setStyleSheet(theme_2)
-        self.ui.account_page.setStyleSheet(theme_2)
-        self.ui.label_13.setStyleSheet("color: rgb(220, 220, 220);\n"
-                                       "background-color: #616970;\n"
-                                       "border-radius: 20px;")
-
 
 class SplashScreen(QMainWindow):
     def __init__(self):
@@ -510,7 +492,7 @@ class SplashScreen(QMainWindow):
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.progress)
         # TIMER IN MILLISECONDS
-        self.timer.start(10)
+        self.timer.start(1)
 
         ## SHOW ==> MAIN WINDOW
         ########################################################################
@@ -589,5 +571,7 @@ class SplashScreen(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = SplashScreen()
+    main = MainWindow()
+    main.show()
+    # window = SplashScreen()
     sys.exit(app.exec_())

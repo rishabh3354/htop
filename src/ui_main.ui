@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>760</width>
-    <height>480</height>
+    <height>430</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>760</width>
-    <height>480</height>
+    <height>430</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,7 @@
     <item>
      <widget class="QFrame" name="drop_shadow_frame">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(77, 77, 127);
+       <string notr="true">background-color:  rgba(6, 60, 89, 1);
 </string>
       </property>
       <property name="frameShape">
@@ -147,7 +147,8 @@ border-radius: 10px;
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">color: rgb(115, 185, 255); background-color: none;</string>
+                <string notr="true">color: rgba(69, 182, 73, 1);
+background-color: none;</string>
                </property>
                <property name="text">
                 <string>HTOP Pro</string>
@@ -187,38 +188,6 @@ border-radius: 10px;
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
-              <widget class="QPushButton" name="home_button">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="toolTip">
-                <string>Options</string>
-               </property>
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="resource.qrc">
-                 <normaloff>:/resource/resource/circled-menu.png</normaloff>:/resource/resource/circled-menu.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>40</width>
-                 <height>32</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item>
               <spacer name="horizontalSpacer_2">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -257,11 +226,11 @@ border-radius: 10px;
                <property name="styleSheet">
                 <string notr="true">QPushButton {
 	border: none;
-	border-radius: 8px;	
-	background-color: rgb(85, 255, 127);
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
 }
 QPushButton:hover {	
-	background-color: rgba(85, 255, 127, 150);
+	background-color: rgba(255, 170, 0, 150);
 }</string>
                </property>
                <property name="text">
@@ -374,7 +343,7 @@ QPushButton:hover {
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>310</y>
+                   <y>250</y>
                    <width>582</width>
                    <height>40</height>
                   </rect>
@@ -392,8 +361,8 @@ QPushButton:hover {
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(220, 220, 220);
-background-color: rgb(98, 98, 162);
+                  <string notr="true">color: rgba(69, 182, 73, 1);
+background-color: none;
 border-radius: 20px;</string>
                  </property>
                  <property name="text">
@@ -483,7 +452,6 @@ border-radius: 20px;</string>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
 	border-radius: 95px;	
-	background-color: rgb(58, 58, 102);
 }</string>
                   </property>
                   <property name="frameShape">
@@ -527,13 +495,16 @@ border-radius: 20px;</string>
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 44, 174); padding: 0px; background-color: none;</string>
+                       <string notr="true">color: rgba(69, 182, 73, 1);
+padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt;&quot;&gt;25&lt;/span&gt;&lt;span style=&quot; font-size:40pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;25&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -646,7 +617,7 @@ border-radius: 20px;</string>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
 	border-radius: 95px;	
-	background-color: rgb(58, 58, 102);
+	background-color: transparent;
 }</string>
                   </property>
                   <property name="frameShape">
@@ -690,13 +661,16 @@ border-radius: 20px;</string>
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(115, 185, 255); padding: 0px; background-color: none;</string>
+                       <string notr="true">color: rgba(69, 182, 73, 1);
+ padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt;&quot;&gt;60&lt;/span&gt;&lt;span style=&quot; font-size:40pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;60&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -809,7 +783,7 @@ border-radius: 20px;</string>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
 	border-radius: 95px;	
-	background-color: rgb(58, 58, 102);
+	background-color: transparent;
 }</string>
                   </property>
                   <property name="frameShape">
@@ -853,13 +827,16 @@ border-radius: 20px;</string>
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(115, 255, 171); padding: 0px; background-color: none;</string>
+                       <string notr="true">color: rgba(69, 182, 73, 1);
+padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt;&quot;&gt;40&lt;/span&gt;&lt;span style=&quot; font-size:40pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;40&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -920,6 +897,10 @@ color:#d1d1d1;</string>
                     <bold>false</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                  </property>
                   <property name="text">
                    <string>App Settings</string>
                   </property>
@@ -931,6 +912,10 @@ color:#d1d1d1;</string>
                <layout class="QGridLayout" name="gridLayout_11">
                 <item row="2" column="4">
                  <widget class="QLabel" name="label_15">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                  </property>
                   <property name="text">
                    <string>1</string>
                   </property>
@@ -946,6 +931,10 @@ color:#d1d1d1;</string>
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                   </property>
                   <property name="text">
                    <string>Net Speed Freq          </string>
@@ -967,6 +956,10 @@ color:#d1d1d1;</string>
                 </item>
                 <item row="3" column="4">
                  <widget class="QLabel" name="label_14">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                  </property>
                   <property name="text">
                    <string>1</string>
                   </property>
@@ -1098,6 +1091,10 @@ color:rgb(255, 51, 51);
                 </item>
                 <item row="4" column="4">
                  <widget class="QLabel" name="label_16">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                  </property>
                   <property name="text">
                    <string>1</string>
                   </property>
@@ -1113,6 +1110,10 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                   </property>
                   <property name="text">
                    <string>CPU Temp Unit          </string>
@@ -1139,6 +1140,10 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                   </property>
                   <property name="text">
                    <string>CPU Indicator Freq          </string>
@@ -1217,6 +1222,10 @@ color:rgb(255, 51, 51);
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                  </property>
                   <property name="text">
                    <string>Net Speed Unit          </string>
                   </property>
@@ -1229,6 +1238,10 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                   </property>
                   <property name="text">
                    <string>RAM Indicator Freq          </string>
@@ -1300,111 +1313,46 @@ color:rgb(255, 51, 51);
                </layout>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_36">
-                <item>
-                 <widget class="QLabel" name="label_20">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>12</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>Theme Settings</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_35">
-                <item>
-                 <widget class="QPushButton" name="theme1">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
-	color:white;
-    border-color: #76797C;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: solid;
-	border-width: 1px;
-	background-color:  #282859;
-
-
-}
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Theme1 (Zesty-Blue)</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>:/myresource/resource/single_video.png</normaloff>:/myresource/resource/single_video.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>80</width>
-                    <height>80</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="theme2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
-	color:white;
-    border-color: #76797C;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: solid;
-	border-width: 1px;
-	background-color:  rgb(45, 45, 45);
-}
-
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Theme2 (Grey)</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>:/myresource/resource/playlist.png</normaloff>:/myresource/resource/playlist.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>80</width>
-                    <height>80</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>1</width>
+                  <height>5</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </widget>
@@ -1423,6 +1371,10 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                    </property>
                     <property name="text">
                      <string>Evaluation</string>
                     </property>
@@ -1436,6 +1388,10 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                    </property>
                     <property name="text">
                      <string>Licence Expired! Purchase a new Licence</string>
                     </property>
@@ -1448,6 +1404,10 @@ color:#d1d1d1;</string>
                    <widget class="QLineEdit" name="lineEdit_account_id">
                     <property name="enabled">
                      <bool>true</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                     </property>
                     <property name="text">
                      <string>8fjfdjhqoifj383ld</string>
@@ -1463,7 +1423,8 @@ color:#d1d1d1;</string>
                      <bool>false</bool>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true"/>
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                     </property>
                     <property name="text">
                      <string>Account ID:</string>
@@ -1482,6 +1443,10 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>false</bool>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
+                    </property>
                     <property name="text">
                      <string>Account Type:</string>
                     </property>
@@ -1491,6 +1456,10 @@ color:#d1d1d1;</string>
                    <widget class="QLineEdit" name="lineEdit_15">
                     <property name="enabled">
                      <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgba(69, 182, 73, 1);
+</string>
                     </property>
                     <property name="text">
                      <string>Account Status:</string>
@@ -1610,7 +1579,7 @@ background-color: rgb(48,48,48);
 </string>
                     </property>
                     <property name="text">
-                     <string>Purchase Licence</string>
+                     <string>Purchase Now</string>
                     </property>
                     <property name="icon">
                      <iconset resource="resource.qrc">
@@ -1703,12 +1672,11 @@ background-color: rgb(48,48,48);
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/resource/resource/user-male--v1.png&quot; width=&quot;100&quot; height=&quot;100&quot; /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d1d1d1;&quot;&gt;Developed by:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#d1d1d1;&quot;&gt;Rishabh bhardwaj (S.D.E)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d1d1d1;&quot;&gt;Email me: &lt;/span&gt;&lt;a href=&quot;mailto: contact@warlordsoftwares.in&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#d1d1d1;&quot;&gt;contact@warlordsoftwares.in&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d1d1d1;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#d1d1d1;&quot;&gt;0.01 | &lt;/span&gt;&lt;span style=&quot; color:#d1d1d1;&quot;&gt;Language used: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#d1d1d1;&quot;&gt;Python | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#d1d1d1;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d1d1d1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/resource/resource/speedx.png&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Developed by:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;Rishabh bhardwaj (S.D.E)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;0.01 | &lt;/span&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Language used: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;Python | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#35a849;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#35a849;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="openExternalLinks">
                    <bool>true</bool>
@@ -1850,7 +1818,7 @@ p, li { white-space: pre-wrap; }
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	color:white;
+color: rgba(69, 182, 73, 1);
     border-color: #76797C;
     padding: 5px;
     border-radius: 5px;
@@ -1896,7 +1864,7 @@ background-color:  rgb(0, 77, 128);
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	color:white;
+color: rgba(69, 182, 73, 1);
     border-color: #76797C;
     padding: 5px;
     border-radius: 5px;
@@ -1942,7 +1910,7 @@ background-color:  rgb(0, 77, 128);
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	color:white;
+color: rgba(69, 182, 73, 1);
     border-color: #76797C;
     padding: 5px;
     border-radius: 5px;
@@ -1981,6 +1949,171 @@ background-color:  rgb(0, 77, 128);
               </item>
              </layout>
             </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="credits_bar_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>33</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="home_button_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/resource/resource/circled-menu.png</normaloff>:/resource/resource/circled-menu.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="speed">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/resource/resource/severity.png</normaloff>:/resource/resource/severity.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>33</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setting">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/resource/resource/horizontal-settings-mixer.png</normaloff>:/resource/resource/horizontal-settings-mixer.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="account">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/resource/resource/check-male--v1.png</normaloff>:/resource/resource/check-male--v1.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>33</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
            </widget>
           </item>
          </layout>
@@ -2058,6 +2191,7 @@ border:none;</string>
  </widget>
  <resources>
   <include location="resource.qrc"/>
+  <include location="../../SPEEDX/src/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
