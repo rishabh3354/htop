@@ -30,7 +30,6 @@ class MainWindow(QMainWindow):
         self.cpu_frequency = 1
         self.ram_frequency = 1
         self.theme_selected = 1
-        self.is_plan_active = True
         self.speed_unit = "MB/s | KB/s | B/s"
         self.temp_unit = "°C  (Celsius)"
         self.default_frequency()
@@ -178,11 +177,10 @@ class MainWindow(QMainWindow):
     def change_net_speed_unit(self):
         self.speed_unit = self.ui.comboBox_2.currentText()
         try:
-            if self.is_plan_active:
-                self.net_speed_thread.terminate()
-                self.start_net_speed_thread()
+            self.net_speed_thread.terminate()
+            self.start_net_speed_thread()
         except Exception as e:
-            pass
+            print(e)
 
     def change_temp_unit(self):
         self.temp_unit = self.ui.comboBox_3.currentText()
@@ -190,7 +188,7 @@ class MainWindow(QMainWindow):
             self.cpu_thread.terminate()
             self.start_cpu_thread()
         except Exception as e:
-            pass
+            print(e)
 
     def change_frequency_net(self):
         self.net_frequency = FREQUENCY_MAPPER.get(self.ui.horizontalSlider.value(), 4)
@@ -199,25 +197,25 @@ class MainWindow(QMainWindow):
             self.net_speed_thread.terminate()
             self.start_net_speed_thread()
         except Exception as e:
-            pass
+            print(e)
 
     def change_frequency_cpu(self):
         self.cpu_frequency = FREQUENCY_MAPPER.get(self.ui.horizontalSlider_2.value(), 4)
         self.ui.label_14.setText(str(self.cpu_frequency) + " Sec")
         try:
-            self.self.cpu_thread.terminate()
+            self.cpu_thread.terminate()
             self.start_cpu_thread()
         except Exception as e:
-            pass
+            print(e)
 
     def change_frequency_ram(self):
         self.ram_frequency = FREQUENCY_MAPPER.get(self.ui.horizontalSlider_3.value(), 4)
         self.ui.label_16.setText(str(self.ram_frequency) + " Sec")
         try:
-            self.self.ram_thread.terminate()
+            self.ram_thread.terminate()
             self.start_ram_thread()
         except Exception as e:
-            pass
+            print(e)
 
     def closeEvent(self, event):
         self.save_settings()
