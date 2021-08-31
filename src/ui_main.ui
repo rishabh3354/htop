@@ -125,7 +125,7 @@ border-radius: 10px;
             <widget class="QLabel" name="label_13">
              <property name="geometry">
               <rect>
-               <x>10</x>
+               <x>30</x>
                <y>20</y>
                <width>451</width>
                <height>21</height>
@@ -451,7 +451,7 @@ QPushButton:hover {
                        <string notr="true">color: #FFFFFF; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;NET&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; SPEED&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;NET &lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;SPEED&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -488,14 +488,14 @@ padding: 0px; background-color: none;</string>
                       <property name="font">
                        <font>
                         <family>URW Gothic</family>
-                        <pointsize>8</pointsize>
+                        <pointsize>9</pointsize>
                        </font>
                       </property>
                       <property name="styleSheet">
                        <string notr="true">color: rgb(148, 148, 216); background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#eeeeec;&quot;&gt;KB/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#eeeeec;&quot;&gt;KB/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -617,7 +617,7 @@ padding: 0px; background-color: none;</string>
                        <string notr="true">color: rgb(148, 148, 216); background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#eeeeec;&quot;&gt;TEMP: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;40ºC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;TEMP: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;40ºC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -636,7 +636,7 @@ padding: 0px; background-color: none;</string>
                        <string notr="true">color: #FFFFFF; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;strong&gt;CPU&lt;/strong&gt; USAGE</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CPU USAGE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -782,7 +782,7 @@ padding: 0px; background-color: none;</string>
                        <string notr="true">color: #FFFFFF; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;RAM&lt;/span&gt; USAGE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;RAM USAGE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -826,7 +826,7 @@ padding: 0px; background-color: none;</string>
                        <string notr="true">color: rgb(148, 148, 216); background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#eeeeec;&quot;&gt;Total: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;2GB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;Total: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;2GB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>

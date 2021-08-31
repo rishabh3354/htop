@@ -256,12 +256,12 @@ class MainWindow(QMainWindow):
 
     def setProgress_cpu(self, value):
         self.setValue(value[0], self.ui.labelPercentageCPU_5, self.ui.circularProgressCPU_5, "rgba(6, 60, 89, 1)")
-        html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:600; color:#eeeeec;">TEMP: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
+        html = '<html><head/><body><p><span style=" font-size:9pt; color:#eeeeec;">TEMP: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_9.setText(html.replace("{VALUE}", str(value[1])))
 
     def setProgress_ram(self, value):
         self.setValue(value[0], self.ui.labelPercentageRAM_2, self.ui.circularProgressRAM_2, "rgba(6, 60, 89, 1)")
-        html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:600; color:#eeeeec;">TOTAL: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
+        html = '<html><head/><body><p><span style=" font-size:9pt; color:#eeeeec;">TOTAL: </span><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_10.setText(html.replace("{VALUE}", value[1]))
 
     def setProgress_net_speed(self, value):
@@ -269,7 +269,7 @@ class MainWindow(QMainWindow):
         show_value = float(value[0][0])
         self.setValue(show_value, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
                       "rgba(6, 60, 89, 1)", graph_value, True)
-        html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:800; color:#eeeeec;">{VALUE}</span></p></body></html>'
+        html = '<html><head/><body><p><span style=" font-size:9pt; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_5.setText(html.replace("{VALUE}", value[0][1]))
 
     def get_graph_value(self, value):
