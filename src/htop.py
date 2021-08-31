@@ -38,6 +38,7 @@ class MainWindow(QMainWindow):
         self.default_frequency()
         self.load_settings()
         self.ui.stackedWidget.setCurrentIndex(0)
+        self.ui.account_progress_bar.setFixedHeight(3)
 
         self.theme_selected = 1
         self.ui.drop_shadow_frame.setStyleSheet(theme_1)
@@ -121,17 +122,27 @@ class MainWindow(QMainWindow):
         if net:
             htmlText = """<p align="center"><span style=" font-size:50pt;">{VALUE}</span><span style=" font-size:40pt; vertical-align:super;"></span></p>"""
         else:
-            htmlText = """<p align="center"><span style=" font-size:50pt;">{VALUE}</span><span style=" font-size:40pt; vertical-align:super;">%</span></p>"""
+            htmlText = """<p align="center"><span style=" font-size:30pt;">{VALUE}</span><span style=" font-size:20pt; vertical-align:super;">%</span></p>"""
         labelPercentage.setText(htmlText.replace("{VALUE}", str(sliderValue)))
         self.progressBarValue(sliderValue, progressBarName, color, net_value, net)
 
     def progressBarValue(self, value, widget, color, net_value, net):
-        styleSheet = """
-        QFrame{
-        	border-radius: 110px;
-        	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{STOP_1} rgba(255, 0, 127, 0), stop:{STOP_2} {COLOR});
-        }
-        """
+
+        if net:
+            styleSheet = """
+                        QFrame{
+                            border-radius: 110px;
+                            background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{STOP_1} rgba(255, 0, 127, 0), stop:{STOP_2} {COLOR});
+                        }
+                        """
+        else:
+
+            styleSheet = """
+            QFrame{
+                border-radius: 85px;
+                background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{STOP_1} rgba(255, 0, 127, 0), stop:{STOP_2} {COLOR});
+            }
+            """
         # GET PROGRESS BAR VALUE, CONVERT TO FLOAT AND INVERT VALUES
         # stop works of 1.000 to 0.000
 
@@ -284,7 +295,7 @@ class MainWindow(QMainWindow):
         show_value = float(value[0][0])
         self.setValue(show_value, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
                       "rgba(6, 60, 89, 1)", graph_value, True)
-        html = '<html><head/><body><p><span style=" font-size:10pt; font-weight:600; color:#eeeeec;">{VALUE}</span></p></body></html>'
+        html = '<html><head/><body><p><span style=" font-size:9pt; font-weight:800; color:#eeeeec;">{VALUE}</span></p></body></html>'
         self.ui.labelCredits_5.setText(html.replace("{VALUE}", value[0][1]))
 
     def get_graph_value(self, value):

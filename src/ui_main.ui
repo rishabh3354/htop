@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
-    <height>430</height>
+    <width>637</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>760</width>
-    <height>430</height>
+    <width>500</width>
+    <height>350</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -122,40 +122,42 @@ border-radius: 10px;
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_2">
-             <property name="spacing">
-              <number>0</number>
+            <widget class="QLabel" name="label_13">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>20</y>
+               <width>451</width>
+               <height>21</height>
+              </rect>
              </property>
-             <property name="leftMargin">
-              <number>15</number>
+             <property name="maximumSize">
+              <size>
+               <width>451</width>
+               <height>21</height>
+              </size>
              </property>
-             <property name="topMargin">
-              <number>0</number>
+             <property name="font">
+              <font>
+               <family>Roboto</family>
+               <pointsize>12</pointsize>
+              </font>
              </property>
-             <property name="rightMargin">
-              <number>0</number>
+             <property name="styleSheet">
+              <string notr="true">color: rgba(69, 182, 73, 1);
+background-color: none;
+border-radius: 20px;</string>
              </property>
-             <property name="bottomMargin">
-              <number>0</number>
+             <property name="text">
+              <string>&quot;If you control the code, you control the world.&quot;</string>
              </property>
-             <item>
-              <widget class="QLabel" name="label_title">
-               <property name="font">
-                <font>
-                 <family>URW Gothic</family>
-                 <pointsize>14</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgba(69, 182, 73, 1);
-background-color: none;</string>
-               </property>
-               <property name="text">
-                <string>HTOP Pro</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
            </widget>
           </item>
           <item>
@@ -301,7 +303,7 @@ QPushButton:hover {
              <string notr="true">background-color: none;</string>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="page_home">
              <property name="styleSheet">
@@ -339,43 +341,10 @@ QPushButton:hover {
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="label_13">
-                 <property name="geometry">
-                  <rect>
-                   <x>70</x>
-                   <y>250</y>
-                   <width>582</width>
-                   <height>40</height>
-                  </rect>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>600</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Roboto</family>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgba(69, 182, 73, 1);
-background-color: none;
-border-radius: 20px;</string>
-                 </property>
-                 <property name="text">
-                  <string>&quot;If you control the code, you control the world.&quot;</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
                 <widget class="QFrame" name="circularProgressBar_Main_3">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>180</x>
                    <y>0</y>
                    <width>240</width>
                    <height>240</height>
@@ -466,7 +435,7 @@ border-radius: 20px;</string>
                      <x>10</x>
                      <y>40</y>
                      <width>171</width>
-                     <height>131</height>
+                     <height>127</height>
                     </rect>
                    </property>
                    <layout class="QGridLayout" name="infoLayout_5">
@@ -540,10 +509,10 @@ padding: 0px; background-color: none;</string>
                 <widget class="QFrame" name="circularProgressBar_Main_5">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>0</y>
-                   <width>240</width>
-                   <height>240</height>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>181</width>
+                   <height>181</height>
                   </rect>
                  </property>
                  <property name="styleSheet">
@@ -560,13 +529,13 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>10</x>
                     <y>10</y>
-                    <width>220</width>
-                    <height>220</height>
+                    <width>170</width>
+                    <height>170</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 110px;	
+	border-radius: 85px;	
 	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.400 rgba(85, 170, 255, 255), stop:0.395 rgba(255, 255, 255, 0));
 }</string>
                   </property>
@@ -582,13 +551,13 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>10</x>
                     <y>10</y>
-                    <width>220</width>
-                    <height>220</height>
+                    <width>170</width>
+                    <height>170</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 110px;	
+	border-radius: 85px;	
 	background-color: rgba(85, 85, 127, 100);
 }</string>
                   </property>
@@ -604,8 +573,8 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>25</x>
                     <y>25</y>
-                    <width>190</width>
-                    <height>190</height>
+                    <width>140</width>
+                    <height>140</height>
                    </rect>
                   </property>
                   <property name="baseSize">
@@ -616,7 +585,7 @@ padding: 0px; background-color: none;</string>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 95px;	
+	border-radius: 65px;	
 	background-color: transparent;
 }</string>
                   </property>
@@ -630,12 +599,31 @@ padding: 0px; background-color: none;</string>
                    <property name="geometry">
                     <rect>
                      <x>10</x>
-                     <y>40</y>
-                     <width>171</width>
-                     <height>126</height>
+                     <y>20</y>
+                     <width>121</width>
+                     <height>101</height>
                     </rect>
                    </property>
                    <layout class="QGridLayout" name="infoLayout_9">
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="labelCredits_9">
+                      <property name="font">
+                       <font>
+                        <family>Ubuntu</family>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(148, 148, 216); background-color: none;</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#eeeeec;&quot;&gt;TEMP: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;40ºC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="0" column="0">
                      <widget class="QLabel" name="labelAplicationName_9">
                       <property name="font">
@@ -670,32 +658,13 @@ padding: 0px; background-color: none;</string>
  padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;60&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:30pt;&quot;&gt;60&lt;/span&gt;&lt;span style=&quot; font-size:20pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
                       </property>
                       <property name="indent">
                        <number>-1</number>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="0">
-                     <widget class="QLabel" name="labelCredits_9">
-                      <property name="font">
-                       <font>
-                        <family>Ubuntu</family>
-                        <pointsize>10</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(148, 148, 216); background-color: none;</string>
-                      </property>
-                      <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#eeeeec;&quot;&gt;TEMP: &lt;/span&gt;&lt;span style=&quot; font-size:9pt; color:#eeeeec;&quot;&gt;40ºC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -706,10 +675,10 @@ padding: 0px; background-color: none;</string>
                 <widget class="QFrame" name="circularProgressBar_Main_2">
                  <property name="geometry">
                   <rect>
-                   <x>460</x>
-                   <y>0</y>
-                   <width>240</width>
-                   <height>240</height>
+                   <x>410</x>
+                   <y>20</y>
+                   <width>181</width>
+                   <height>181</height>
                   </rect>
                  </property>
                  <property name="styleSheet">
@@ -726,13 +695,13 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>10</x>
                     <y>10</y>
-                    <width>220</width>
-                    <height>220</height>
+                    <width>170</width>
+                    <height>170</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 110px;	
+	border-radius: 85px;	
 	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.600 rgba(85, 255, 127, 255), stop:0.595 rgba(255, 255, 255, 0));
 }</string>
                   </property>
@@ -748,13 +717,13 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>10</x>
                     <y>10</y>
-                    <width>220</width>
-                    <height>220</height>
+                    <width>170</width>
+                    <height>170</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 110px;	
+	border-radius: 85px;	
 	background-color: rgba(85, 85, 127, 100);
 }</string>
                   </property>
@@ -770,8 +739,8 @@ padding: 0px; background-color: none;</string>
                    <rect>
                     <x>25</x>
                     <y>25</y>
-                    <width>190</width>
-                    <height>190</height>
+                    <width>140</width>
+                    <height>140</height>
                    </rect>
                   </property>
                   <property name="baseSize">
@@ -782,7 +751,7 @@ padding: 0px; background-color: none;</string>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame{
-	border-radius: 95px;	
+	border-radius: 65px;	
 	background-color: transparent;
 }</string>
                   </property>
@@ -796,9 +765,9 @@ padding: 0px; background-color: none;</string>
                    <property name="geometry">
                     <rect>
                      <x>10</x>
-                     <y>40</y>
-                     <width>171</width>
-                     <height>127</height>
+                     <y>20</y>
+                     <width>121</width>
+                     <height>94</height>
                     </rect>
                    </property>
                    <layout class="QGridLayout" name="infoLayout_10">
@@ -836,7 +805,7 @@ padding: 0px; background-color: none;</string>
 padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;40&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:30pt;&quot;&gt;60&lt;/span&gt;&lt;span style=&quot; font-size:20pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -891,7 +860,7 @@ color:#d1d1d1;</string>
                   </property>
                   <property name="font">
                    <font>
-                    <pointsize>12</pointsize>
+                    <pointsize>11</pointsize>
                     <weight>50</weight>
                     <italic>false</italic>
                     <bold>false</bold>
@@ -912,6 +881,11 @@ color:#d1d1d1;</string>
                <layout class="QGridLayout" name="gridLayout_11">
                 <item row="2" column="4">
                  <widget class="QLabel" name="label_15">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -931,6 +905,11 @@ color:#d1d1d1;</string>
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
@@ -956,6 +935,11 @@ color:#d1d1d1;</string>
                 </item>
                 <item row="3" column="4">
                  <widget class="QLabel" name="label_14">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -975,6 +959,11 @@ color:#d1d1d1;</string>
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QComboBox {
@@ -1091,6 +1080,11 @@ color:rgb(255, 51, 51);
                 </item>
                 <item row="4" column="4">
                  <widget class="QLabel" name="label_16">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1110,6 +1104,11 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
@@ -1141,6 +1140,11 @@ color:rgb(255, 51, 51);
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1157,6 +1161,11 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QComboBox {
@@ -1222,6 +1231,11 @@ color:rgb(255, 51, 51);
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1238,6 +1252,11 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">color: rgba(69, 182, 73, 1);
@@ -1286,6 +1305,11 @@ color:rgb(255, 51, 51);
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
                   </property>
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
@@ -1371,6 +1395,11 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1387,6 +1416,11 @@ color:#d1d1d1;</string>
                    <widget class="QLineEdit" name="lineEdit_expires_on">
                     <property name="enabled">
                      <bool>true</bool>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
@@ -1405,6 +1439,11 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1421,6 +1460,11 @@ color:#d1d1d1;</string>
                    <widget class="QLineEdit" name="lineEdit_13">
                     <property name="enabled">
                      <bool>false</bool>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
@@ -1443,6 +1487,11 @@ color:#d1d1d1;</string>
                     <property name="enabled">
                      <bool>false</bool>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
 </string>
@@ -1456,6 +1505,11 @@ color:#d1d1d1;</string>
                    <widget class="QLineEdit" name="lineEdit_15">
                     <property name="enabled">
                      <bool>false</bool>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgba(69, 182, 73, 1);
@@ -1484,6 +1538,11 @@ color:#d1d1d1;</string>
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
                     </property>
                     <property name="autoFillBackground">
                      <bool>false</bool>
@@ -1531,6 +1590,11 @@ color: white;
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ef2929;&quot;&gt;Error Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
@@ -1558,12 +1622,17 @@ color: white;
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-		padding: 5px;
+		padding: 3px;
 	padding-right: 8px;
 	padding-left: 8px;
 	background-color: rgba(69, 182, 73, 1);
@@ -1604,12 +1673,17 @@ background-color: rgb(48,48,48);
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-		padding: 5px;
+		padding: 3px;
 	padding-right: 8px;
 	padding-left: 8px;
 	background-color: rgba(255, 170, 0, 150);
@@ -1672,11 +1746,8 @@ background-color: rgb(48,48,48);
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/resource/resource/speedx.png&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Developed by:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;Rishabh bhardwaj (S.D.E)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;0.01 | &lt;/span&gt;&lt;span style=&quot; color:#35a849;&quot;&gt;Language used: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#35a849;&quot;&gt;Python | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#35a849;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#35a849;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;Developed by: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;Rishabh bhardwaj (S.D.E)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;0.01 | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#35a849;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="openExternalLinks">
                    <bool>true</bool>
@@ -1691,12 +1762,17 @@ p, li { white-space: pre-wrap; }
                  <layout class="QHBoxLayout" name="horizontalLayout_34">
                   <item>
                    <widget class="QPushButton" name="warlordsoft_button">
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	padding: 5px;
+	padding: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
 	background-color:rgb(0, 153, 255);
@@ -1717,12 +1793,17 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="donate_button">
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	padding: 5px;
+	padding: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
 	background-color:rgb(0, 153, 255);
@@ -1743,12 +1824,17 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="rate_button">
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	padding: 5px;
+	padding: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
 	background-color:rgb(0, 153, 255);
@@ -1769,12 +1855,17 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="feedback_button">
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	padding: 5px;
+	padding: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
 	background-color:rgb(0, 153, 255);
@@ -1813,6 +1904,11 @@ p, li { white-space: pre-wrap; }
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
@@ -1820,7 +1916,7 @@ p, li { white-space: pre-wrap; }
                      <string notr="true">QPushButton {
 color: rgba(69, 182, 73, 1);
     border-color: #76797C;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
     border-style: solid;
 	border-width: 1px;
@@ -1845,8 +1941,8 @@ background-color:  rgb(0, 77, 128);
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>75</width>
-                      <height>75</height>
+                      <width>55</width>
+                      <height>60</height>
                      </size>
                     </property>
                    </widget>
@@ -1859,6 +1955,11 @@ background-color:  rgb(0, 77, 128);
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
@@ -1866,7 +1967,7 @@ background-color:  rgb(0, 77, 128);
                      <string notr="true">QPushButton {
 color: rgba(69, 182, 73, 1);
     border-color: #76797C;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
     border-style: solid;
 	border-width: 1px;
@@ -1891,8 +1992,8 @@ background-color:  rgb(0, 77, 128);
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>73</width>
-                      <height>76</height>
+                      <width>55</width>
+                      <height>60</height>
                      </size>
                     </property>
                    </widget>
@@ -1905,6 +2006,11 @@ background-color:  rgb(0, 77, 128);
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
                     <property name="cursor">
                      <cursorShape>PointingHandCursor</cursorShape>
                     </property>
@@ -1912,7 +2018,7 @@ background-color:  rgb(0, 77, 128);
                      <string notr="true">QPushButton {
 color: rgba(69, 182, 73, 1);
     border-color: #76797C;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
     border-style: solid;
 	border-width: 1px;
@@ -1937,8 +2043,8 @@ background-color:  rgb(0, 77, 128);
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>76</width>
-                      <height>76</height>
+                      <width>55</width>
+                      <height>60</height>
                      </size>
                     </property>
                    </widget>
@@ -1984,6 +2090,19 @@ background-color:  rgb(0, 77, 128);
              <property name="bottomMargin">
               <number>0</number>
              </property>
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
              <item>
               <widget class="QPushButton" name="home_button_2">
                <property name="sizePolicy">
@@ -2043,6 +2162,23 @@ background-color:  rgb(0, 77, 128);
               </widget>
              </item>
              <item>
+              <widget class="QLabel" name="label_title">
+               <property name="font">
+                <font>
+                 <family>URW Gothic</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgba(69, 182, 73, 1);
+background-color: none;</string>
+               </property>
+               <property name="text">
+                <string>HTOP GUI</string>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QPushButton" name="setting">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -2094,8 +2230,8 @@ background-color:  rgb(0, 77, 128);
                </property>
                <property name="iconSize">
                 <size>
-                 <width>40</width>
-                 <height>33</height>
+                 <width>33</width>
+                 <height>30</height>
                 </size>
                </property>
               </widget>
