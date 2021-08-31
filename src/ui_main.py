@@ -55,16 +55,16 @@ class Ui_MainWindow(object):
         self.frame_title.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_title.setObjectName("frame_title")
         self.label_13 = QtWidgets.QLabel(self.frame_title)
-        self.label_13.setGeometry(QtCore.QRect(70, 20, 451, 21))
+        self.label_13.setGeometry(QtCore.QRect(10, 20, 451, 21))
         self.label_13.setMaximumSize(QtCore.QSize(451, 21))
         font = QtGui.QFont()
-        font.setFamily("Roboto")
+        font.setFamily("URW Gothic")
         font.setPointSize(12)
         self.label_13.setFont(font)
         self.label_13.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
 "background-color: none;\n"
 "border-radius: 20px;")
-        self.label_13.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_13.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_13.setWordWrap(True)
         self.label_13.setObjectName("label_13")
         self.horizontalLayout.addWidget(self.frame_title)
@@ -186,14 +186,14 @@ class Ui_MainWindow(object):
         self.circularContainer_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.circularContainer_5.setObjectName("circularContainer_5")
         self.layoutWidget_5 = QtWidgets.QWidget(self.circularContainer_5)
-        self.layoutWidget_5.setGeometry(QtCore.QRect(10, 40, 171, 127))
+        self.layoutWidget_5.setGeometry(QtCore.QRect(10, 40, 171, 128))
         self.layoutWidget_5.setObjectName("layoutWidget_5")
         self.infoLayout_5 = QtWidgets.QGridLayout(self.layoutWidget_5)
         self.infoLayout_5.setContentsMargins(0, 0, 0, 0)
         self.infoLayout_5.setObjectName("infoLayout_5")
         self.labelAplicationName_5 = QtWidgets.QLabel(self.layoutWidget_5)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.labelAplicationName_5.setFont(font)
         self.labelAplicationName_5.setStyleSheet("color: #FFFFFF; background-color: none;")
@@ -215,7 +215,7 @@ class Ui_MainWindow(object):
         self.infoLayout_5.addWidget(self.labelPercentageGPU_3, 1, 0, 1, 1)
         self.labelCredits_5 = QtWidgets.QLabel(self.layoutWidget_5)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
+        font.setFamily("URW Gothic")
         font.setPointSize(8)
         self.labelCredits_5.setFont(font)
         self.labelCredits_5.setStyleSheet("color: rgb(148, 148, 216); background-color: none;")
@@ -264,7 +264,7 @@ class Ui_MainWindow(object):
         self.infoLayout_9.setObjectName("infoLayout_9")
         self.labelCredits_9 = QtWidgets.QLabel(self.layoutWidget_9)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.labelCredits_9.setFont(font)
         self.labelCredits_9.setStyleSheet("color: rgb(148, 148, 216); background-color: none;")
@@ -273,7 +273,7 @@ class Ui_MainWindow(object):
         self.infoLayout_9.addWidget(self.labelCredits_9, 2, 0, 1, 1)
         self.labelAplicationName_9 = QtWidgets.QLabel(self.layoutWidget_9)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
+        font.setFamily("URW Gothic")
         font.setPointSize(11)
         self.labelAplicationName_9.setFont(font)
         self.labelAplicationName_9.setStyleSheet("color: #FFFFFF; background-color: none;")
@@ -328,15 +328,14 @@ class Ui_MainWindow(object):
         self.circularContainer_10.setFrameShadow(QtWidgets.QFrame.Raised)
         self.circularContainer_10.setObjectName("circularContainer_10")
         self.layoutWidget_10 = QtWidgets.QWidget(self.circularContainer_10)
-        self.layoutWidget_10.setGeometry(QtCore.QRect(10, 20, 121, 94))
+        self.layoutWidget_10.setGeometry(QtCore.QRect(10, 20, 121, 95))
         self.layoutWidget_10.setObjectName("layoutWidget_10")
         self.infoLayout_10 = QtWidgets.QGridLayout(self.layoutWidget_10)
         self.infoLayout_10.setContentsMargins(0, 0, 0, 0)
         self.infoLayout_10.setObjectName("infoLayout_10")
         self.labelAplicationName_10 = QtWidgets.QLabel(self.layoutWidget_10)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
-        font.setPointSize(11)
+        font.setFamily("URW Gothic")
         self.labelAplicationName_10.setFont(font)
         self.labelAplicationName_10.setStyleSheet("color: #FFFFFF; background-color: none;")
         self.labelAplicationName_10.setAlignment(QtCore.Qt.AlignCenter)
@@ -357,7 +356,7 @@ class Ui_MainWindow(object):
         self.infoLayout_10.addWidget(self.labelPercentageRAM_2, 1, 0, 1, 1)
         self.labelCredits_10 = QtWidgets.QLabel(self.layoutWidget_10)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu")
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.labelCredits_10.setFont(font)
         self.labelCredits_10.setStyleSheet("color: rgb(148, 148, 216); background-color: none;")
@@ -381,10 +380,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_21.sizePolicy().hasHeightForWidth())
         self.label_21.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
+        font.setFamily("URW Gothic")
         self.label_21.setFont(font)
         self.label_21.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
 "")
@@ -397,6 +393,7 @@ class Ui_MainWindow(object):
         self.gridLayout_11.setObjectName("gridLayout_11")
         self.label_15 = QtWidgets.QLabel(self.page_credits)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_15.setFont(font)
         self.label_15.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -411,6 +408,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_22.sizePolicy().hasHeightForWidth())
         self.label_22.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_22.setFont(font)
         self.label_22.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -421,6 +419,7 @@ class Ui_MainWindow(object):
         self.gridLayout_11.addItem(spacerItem2, 0, 0, 1, 1)
         self.label_14 = QtWidgets.QLabel(self.page_credits)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_14.setFont(font)
         self.label_14.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -435,6 +434,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.comboBox_2.sizePolicy().hasHeightForWidth())
         self.comboBox_2.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.comboBox_2.setFont(font)
         self.comboBox_2.setStyleSheet("QComboBox {\n"
@@ -504,6 +504,7 @@ class Ui_MainWindow(object):
         self.gridLayout_11.addItem(spacerItem4, 0, 4, 1, 1)
         self.label_16 = QtWidgets.QLabel(self.page_credits)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_16.setFont(font)
         self.label_16.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -518,6 +519,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_25.sizePolicy().hasHeightForWidth())
         self.label_25.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_25.setFont(font)
         self.label_25.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -533,6 +535,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_23.sizePolicy().hasHeightForWidth())
         self.label_23.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_23.setFont(font)
         self.label_23.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -546,6 +549,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.comboBox_3.sizePolicy().hasHeightForWidth())
         self.comboBox_3.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.comboBox_3.setFont(font)
         self.comboBox_3.setStyleSheet("QComboBox {\n"
@@ -601,6 +605,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_19.sizePolicy().hasHeightForWidth())
         self.label_19.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_19.setFont(font)
         self.label_19.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -614,6 +619,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_24.sizePolicy().hasHeightForWidth())
         self.label_24.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.label_24.setFont(font)
         self.label_24.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
@@ -689,6 +695,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_29.setObjectName("horizontalLayout_29")
         self.verticalLayout_26.addLayout(self.horizontalLayout_29)
         self.textBrowser = QtWidgets.QTextBrowser(self.account_page)
+        font = QtGui.QFont()
+        font.setFamily("URW Gothic")
+        self.textBrowser.setFont(font)
         self.textBrowser.setTextInteractionFlags(QtCore.Qt.LinksAccessibleByKeyboard|QtCore.Qt.LinksAccessibleByMouse|QtCore.Qt.TextBrowserInteraction|QtCore.Qt.TextSelectableByKeyboard|QtCore.Qt.TextSelectableByMouse)
         self.textBrowser.setOpenExternalLinks(True)
         self.textBrowser.setObjectName("textBrowser")
@@ -775,6 +784,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.setting_button.sizePolicy().hasHeightForWidth())
         self.setting_button.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.setting_button.setFont(font)
         self.setting_button.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -809,6 +819,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.monitor_button.sizePolicy().hasHeightForWidth())
         self.monitor_button.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.monitor_button.setFont(font)
         self.monitor_button.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -843,6 +854,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.account_button.sizePolicy().hasHeightForWidth())
         self.account_button.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
+        font.setFamily("URW Gothic")
         font.setPointSize(10)
         self.account_button.setFont(font)
         self.account_button.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -982,7 +994,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -1017,14 +1029,14 @@ class Ui_MainWindow(object):
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; color:#35a849;\">Developed by: </span><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">Rishabh bhardwaj (S.D.E)</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; color:#35a849;\">Version: </span><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">0.2 | </span><a href=\"https://snapcraft.io/search?q=rishabh\"><span style=\" font-size:10pt; font-weight:600; text-decoration: underline; color:#ef2929;\">Get more apps</span></a></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">Support Request:</span><span style=\" font-size:10pt; color:#35a849;\">   If you like this Application, then please support the developer by donation. Your donations make me </span><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">feel motivated</span><span style=\" font-size:10pt; color:#35a849;\"> to my work. Thanks!  Expect </span><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">new updates</span><span style=\" font-size:10pt; color:#35a849;\"> in near future!</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#35a849;\">Donaters Name</span><span style=\" font-size:10pt; color:#35a849;\"> and Amount will be displayed in @ </span><a href=\"https://warlordsoftwares.in/warlord_soft/dashboard/\"><span style=\" text-decoration: underline; color:#ef2929;\">warlordsoft page</span></a><span style=\" font-size:10pt; color:#35a849;\"> as a Thanksgiving notes!</span></p></body></html>"))
+"</style></head><body style=\" font-family:\'URW Gothic\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/resource/resource/speedx.png\" height=\"20\" /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\">Developed by: </span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">Rishabh bhardwaj (S.D.E)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\">Version: </span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">0.2 | </span><a href=\"https://snapcraft.io/search?q=rishabh\"><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; text-decoration: underline; color:#ef2929;\">Get more apps</span></a></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">Support Request:</span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\">   If you like this Application, then please support the developer by donation. Your donations make me </span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">feel motivated</span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"> to my work. Thanks!  Expect </span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">new updates</span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"> in near future!</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:10pt; font-weight:600; color:#35a849;\">Donaters Name</span><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"> and Amount will be displayed in @ </span><a href=\"https://warlordsoftwares.in/warlord_soft/dashboard/\"><span style=\" font-family:\'Ubuntu\'; text-decoration: underline; color:#ef2929;\">warlordsoft page</span></a><span style=\" font-family:\'Ubuntu\'; font-size:10pt; color:#35a849;\"> as a Thanksgiving notes!</span></p></body></html>"))
         self.warlordsoft_button.setText(_translate("MainWindow", "Visit @WarlordSoft"))
         self.rate_button.setText(_translate("MainWindow", "Rate"))
         self.feedback_button.setText(_translate("MainWindow", "Feedback"))
