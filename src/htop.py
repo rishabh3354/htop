@@ -2,12 +2,10 @@ import sys
 import webbrowser
 from PyQt5 import QtCore
 from PyQt5.QtCore import Qt, QSettings, QUrl
-from PyQt5.QtGui import QIcon, QColor
-from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox, QStyle, QGraphicsDropShadowEffect, QDesktopWidget
+from PyQt5.QtGui import QColor
+from PyQt5.QtWidgets import QMainWindow, QApplication, QGraphicsDropShadowEffect, QDesktopWidget
 from PyQt5.QtGui import QDesktopServices
 from htop_threads import DummyDataThread, CpuThread, RamThread, NetSpeedThread
-from account_threads import SaveLocalInToken, RefreshButtonThread
-from accounts import ApplicationStartupTask, days_left, get_user_data_from_local, check_for_local_token
 from ui_splash_screen import Ui_SplashScreen
 from style import theme_1
 from ui_main import Ui_MainWindow
@@ -38,7 +36,6 @@ class MainWindow(QMainWindow):
         self.default_frequency()
         self.load_settings()
         self.ui.stackedWidget.setCurrentIndex(0)
-        self.ui.account_progress_bar.setFixedHeight(3)
 
         self.theme_selected = 1
         self.ui.drop_shadow_frame.setStyleSheet(theme_1)
@@ -83,40 +80,19 @@ class MainWindow(QMainWindow):
 
         self.ui.title_bar.mouseMoveEvent = moveWindow
 
-        # Accounts/About functionality new======================================================
-
-        # init
-        ApplicationStartupTask(PRODUCT_NAME).create_free_trial_offline()
-        self.ui.error_message.clear()
-        self.ui.error_message.setStyleSheet("color:red;")
-        self.ui.account_progress_bar.setVisible(False)
-        self.ui.account_progress_bar.setFixedHeight(3)
-        self.my_plan()
-
         # signal and slots
         self.ui.warlordsoft_button.clicked.connect(self.redirect_to_warlordsoft)
         self.ui.donate_button.clicked.connect(self.redirect_to_paypal_donation)
         self.ui.rate_button.clicked.connect(self.redirect_to_rate_snapstore)
         self.ui.feedback_button.clicked.connect(self.redirect_to_feedback_button)
-        self.ui.purchase_licence.clicked.connect(self.purchase_licence)
-        self.ui.refresh_account.clicked.connect(self.refresh_account)
 
         #  ======================Your plan functionality end=============================================
 
-        if self.is_plan_active:
-            self.load_cpu_data()
-            self.load_ram_data()
-            self.load_net_speed_data()
-            self.show()
-            self.load_annimation_data()
-        else:
-            self.load_cpu_data()
-            self.load_ram_data()
-            self.show()
-            self.load_annimation_data()
-            self.check_your_plan()
-            self.setValue(0, self.ui.labelPercentageGPU_3, self.ui.circularProgressGPU_5,
-                          "rgba(6, 60, 89, 1)", 100, True)
+        self.load_cpu_data()
+        self.load_ram_data()
+        self.load_net_speed_data()
+        self.show()
+        self.load_annimation_data()
 
     def setValue(self, sliderValue, labelPercentage, progressBarName, color, net_value=50, net=False):
         if net:
@@ -356,11 +332,11 @@ class MainWindow(QMainWindow):
     """
 
     def redirect_to_warlordsoft(self):
-        warlord_soft_link = "https://warlordsoftwares.in/"
+        warlord_soft_link = "https://warlordsoftwares.in/warlord_soft/dashboard/"
         webbrowser.open(warlord_soft_link)
 
     def redirect_to_paypal_donation(self):
-        paypal_donation_link = "https://www.paypal.com/paypalme/rishabh3354"
+        paypal_donation_link = "https://www.paypal.com/paypalme/rishabh3354/5"
         webbrowser.open(paypal_donation_link)
 
     def redirect_to_rate_snapstore(self):
@@ -369,114 +345,6 @@ class MainWindow(QMainWindow):
     def redirect_to_feedback_button(self):
         feedback_link = "https://warlordsoftwares.in/contact_us/"
         webbrowser.open(feedback_link)
-
-    def purchase_licence(self):
-        account_dict = get_user_data_from_local()
-        if account_dict:
-            account_id = str(account_dict.get("email")).split("@")[0]
-            if account_id:
-                warlord_soft_link = f"https://warlordsoftwares.in/warlord_soft/subscription/?product={PRODUCT_NAME}&account_id={account_id} "
-            else:
-                warlord_soft_link = f"https://warlordsoftwares.in/signup/"
-            webbrowser.open(warlord_soft_link)
-            data = dict()
-            data["email"] = f"{account_id}@warlordsoft.in"
-            data["password"] = f"{account_id}@warlordsoft.in"
-            data["re_password"] = f"{account_id}@warlordsoft.in"
-            self.save_token = SaveLocalInToken(data)
-            self.save_token.start()
-
-    def refresh_account(self):
-        self.ui.error_message.clear()
-        self.ui.account_progress_bar.setRange(0, 0)
-        self.ui.account_progress_bar.setVisible(True)
-        self.refresh_thread = RefreshButtonThread(PRODUCT_NAME)
-        self.refresh_thread.change_value_refresh.connect(self.after_refresh)
-        self.refresh_thread.start()
-
-    def after_refresh(self, response_dict):
-        if response_dict.get("status"):
-            user_plan_data = get_user_data_from_local()
-            if user_plan_data:
-                self.logged_in_user_plan_page(user_plan_data)
-        else:
-            self.ui.error_message.setText(response_dict.get("message"))
-        self.ui.account_progress_bar.setRange(0, 1)
-        self.ui.account_progress_bar.setVisible(False)
-
-    def my_plan(self):
-        token = check_for_local_token()
-        if token not in [None, ""]:
-            user_plan_data = get_user_data_from_local()
-            if user_plan_data:
-                self.logged_in_user_plan_page(user_plan_data)
-            else:
-                user_plan_data = dict()
-                user_plan_data['plan'] = "N/A"
-                user_plan_data['expiry_date'] = "N/A"
-                user_plan_data['email'] = "N/A"
-                self.logged_in_user_plan_page(user_plan_data)
-        else:
-            user_plan_data = get_user_data_from_local()
-            if user_plan_data:
-                self.logged_in_user_plan_page(user_plan_data)
-
-    def logged_in_user_plan_page(self, user_plan_data):
-        account_email = user_plan_data.get('email')
-        plan = user_plan_data.get("plan", "N/A")
-        expiry_date = user_plan_data.get("expiry_date")
-        if account_email:
-            account_id = str(account_email).split("@")[0]
-            self.ui.lineEdit_account_id.setText(account_id)
-        else:
-            self.ui.lineEdit_account_id.setText("N/A")
-        if plan == "Free Trial":
-            self.ui.lineEdit_plan.setText("Evaluation")
-        elif plan == "Life Time Free Plan":
-            self.ui.purchase_licence.setEnabled(False)
-            self.ui.refresh_account.setEnabled(False)
-            self.ui.lineEdit_plan.setText(plan)
-        else:
-            self.ui.lineEdit_plan.setText(plan)
-        if expiry_date:
-            if plan == "Life Time Free Plan":
-                self.ui.lineEdit_expires_on.setText("Active")
-            else:
-                plan_days_left = days_left(expiry_date)
-                if plan_days_left == "0 Day(s) Left":
-                    self.ui.error_message.setText("Evaluation period ended! Upgrade to PRO")
-                    self.ui.lineEdit_expires_on.setText(plan_days_left)
-                    self.is_plan_active = False
-                else:
-                    self.is_plan_active = True
-                    self.ui.lineEdit_expires_on.setText(plan_days_left)
-        else:
-            self.ui.lineEdit_expires_on.setText("N/A")
-
-    def check_your_plan(self):
-        if not self.is_plan_active:
-            self.msg = QMessageBox()
-            self.msg.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-            self.msg.setStyleSheet("background-color:rgb(48,48,48);color:white;")
-            self.msg.setIcon(QMessageBox.Information)
-            self.msg.setText("Evaluation Period Ended!")
-            self.msg.setInformativeText("Upgrade to PRO to Unlock Net speed Feature")
-            purchase = self.msg.addButton(QMessageBox.Yes)
-            close = self.msg.addButton(QMessageBox.Yes)
-            purchase.setText('Purchase Licence')
-            close.setText('Close')
-            purchase.setIcon(QIcon(QApplication.style().standardIcon(QStyle.SP_DialogOkButton)))
-            close.setIcon(QIcon(QApplication.style().standardIcon(QStyle.SP_BrowserStop)))
-            self.msg.exec_()
-            try:
-                if self.msg.clickedButton() == purchase:
-                    self.account_button_clicked()
-                elif self.msg.clickedButton() == close:
-                    pass
-            except Exception as e:
-                pass
-            return False
-        return True
 
 
 class SplashScreen(QMainWindow):

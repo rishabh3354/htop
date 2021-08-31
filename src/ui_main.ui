@@ -303,7 +303,7 @@ QPushButton:hover {
              <string notr="true">background-color: none;</string>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="page_home">
              <property name="styleSheet">
@@ -871,11 +871,24 @@ color:#d1d1d1;</string>
 </string>
                   </property>
                   <property name="text">
-                   <string>App Settings</string>
+                   <string>Settings</string>
                   </property>
                  </widget>
                 </item>
                </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
               <item>
                <layout class="QGridLayout" name="gridLayout_11">
@@ -1350,19 +1363,6 @@ color:rgb(255, 51, 51);
                </spacer>
               </item>
               <item>
-               <spacer name="horizontalSpacer_9">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <spacer name="horizontalSpacer">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
@@ -1387,374 +1387,61 @@ color:#d1d1d1;</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_26">
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_26">
-                <item>
-                 <layout class="QGridLayout" name="gridLayout_8">
-                  <item row="1" column="1">
-                   <widget class="QLineEdit" name="lineEdit_plan">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Evaluation</string>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="1">
-                   <widget class="QLineEdit" name="lineEdit_expires_on">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Licence Expired! Purchase a new Licence</string>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QLineEdit" name="lineEdit_account_id">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>8fjfdjhqoifj383ld</string>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="0">
-                   <widget class="QLineEdit" name="lineEdit_13">
-                    <property name="enabled">
-                     <bool>false</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Account ID:</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="2">
-                   <widget class="QLabel" name="label_18">
-                    <property name="text">
-                     <string/>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QLineEdit" name="lineEdit_14">
-                    <property name="enabled">
-                     <bool>false</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Account Type:</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="0">
-                   <widget class="QLineEdit" name="lineEdit_15">
-                    <property name="enabled">
-                     <bool>false</bool>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgba(69, 182, 73, 1);
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Account Status:</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_31">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_28">
-                  <item>
-                   <widget class="QProgressBar" name="account_progress_bar">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="autoFillBackground">
-                     <bool>false</bool>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QProgressBar:horizontal {
-border-radius: 5px;
-background:rgba(0,0,0,0.1);
-padding: 1px;
-color: white;
-background-color: rgba(6, 60, 89, 1);
-height: 1px;
-
-
-}
-QProgressBar::chunk:horizontal {
-background:rgba(69, 182, 73, 1);
-border-radius: 5px;
-padding: 1px;
-color: white;
-
-}
-QProgressBar 
-{ 
-color: white; 
-}
-</string>
-                    </property>
-                    <property name="maximum">
-                     <number>100</number>
-                    </property>
-                    <property name="value">
-                     <number>100</number>
-                    </property>
-                    <property name="textVisible">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="error_message">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ef2929;&quot;&gt;Error Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_30">
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_32">
-                  <item>
-                   <widget class="QPushButton" name="purchase_licence">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton {
-		padding: 3px;
-	padding-right: 8px;
-	padding-left: 8px;
-	background-color: rgba(69, 182, 73, 1);
+               <widget class="QPushButton" name="donate_button">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color:rgb(255, 170, 0);
+	border-radius: 5px;
 	color:black;
 
 }
-
-QPushButton:disabled {	
-background-color: rgb(48,48,48);
-}
-
-
 </string>
-                    </property>
-                    <property name="text">
-                     <string>Purchase Now</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resource.qrc">
-                      <normaloff>:/resource/resource/shopping-cart.png</normaloff>:/resource/resource/shopping-cart.png</iconset>
-                    </property>
-                    <property name="iconSize">
-                     <size>
-                      <width>18</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="refresh_account">
-                    <property name="enabled">
-                     <bool>true</bool>
-                    </property>
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton {
-		padding: 3px;
-	padding-right: 8px;
-	padding-left: 8px;
-	background-color: rgba(255, 170, 0, 150);
-	color:black;
-
-
-}
-QPushButton:disabled {	
-background-color: rgb(48,48,48);
-}
-
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Refresh Account</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resource.qrc">
-                      <normaloff>:/resource/resource/refresh--v1.png</normaloff>:/resource/resource/refresh--v1.png</iconset>
-                    </property>
-                    <property name="iconSize">
-                     <size>
-                      <width>18</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
+                </property>
+                <property name="text">
+                 <string>Donate</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resource.qrc">
+                  <normaloff>:/resource/resource/paypal.png</normaloff>:/resource/resource/paypal.png</iconset>
+                </property>
+               </widget>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_29">
-                <item>
-                 <widget class="QTextBrowser" name="developer_info">
-                  <property name="enabled">
-                   <bool>true</bool>
-                  </property>
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="verticalScrollBarPolicy">
-                   <enum>Qt::ScrollBarAlwaysOff</enum>
-                  </property>
-                  <property name="horizontalScrollBarPolicy">
-                   <enum>Qt::ScrollBarAlwaysOff</enum>
-                  </property>
-                  <property name="readOnly">
-                   <bool>true</bool>
-                  </property>
-                  <property name="html">
-                   <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+               <layout class="QHBoxLayout" name="horizontalLayout_29"/>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;Developed by: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;Rishabh bhardwaj (S.D.E)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;0.01 | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#35a849;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                  </property>
-                  <property name="openExternalLinks">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;Version: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;0.2 | &lt;/span&gt;&lt;a href=&quot;https://snapcraft.io/search?q=rishabh&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; text-decoration: underline; color:#ef2929;&quot;&gt;Get more apps&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;Support Request:&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt;   If you like this Application, then please support the developer by donation. Your donations make me &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;feel motivated&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt; to my work. Thanks!  Expect &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;new updates&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt; in near future!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#35a849;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#35a849;&quot;&gt;Donaters Name&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt; and Amount will be displayed in @ &lt;/span&gt;&lt;a href=&quot;https://warlordsoftwares.in/warlord_soft/dashboard/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ef2929;&quot;&gt;warlordsoft page&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:10pt; color:#35a849;&quot;&gt; as a Thanksgiving notes!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+                </property>
+                <property name="openExternalLinks">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_33">
@@ -1791,100 +1478,69 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item>
-                   <widget class="QPushButton" name="donate_button">
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton {
-	padding: 3px;
-	padding-right: 10px;
-	padding-left: 10px;
-	background-color:rgb(0, 153, 255);
-	border-radius: 5px;
-	color:black;
-
-}
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Donate</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resource.qrc">
-                      <normaloff>:/resource/resource/paypal.png</normaloff>:/resource/resource/paypal.png</iconset>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="rate_button">
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton {
-	padding: 3px;
-	padding-right: 10px;
-	padding-left: 10px;
-	background-color:rgb(0, 153, 255);
-	border-radius: 5px;
-	color:black;
-
-}
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Rate</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resource.qrc">
-                      <normaloff>:/resource/resource/facebook-like.png</normaloff>:/resource/resource/facebook-like.png</iconset>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="feedback_button">
-                    <property name="font">
-                     <font>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton {
-	padding: 3px;
-	padding-right: 10px;
-	padding-left: 10px;
-	background-color:rgb(0, 153, 255);
-	border-radius: 5px;
-	color:black;
-
-}
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Feedback</string>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="resource.qrc">
-                      <normaloff>:/resource/resource/person-growth.png</normaloff>:/resource/resource/person-growth.png</iconset>
-                    </property>
-                   </widget>
-                  </item>
                  </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="rate_button">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color:rgb(0, 153, 255);
+	border-radius: 5px;
+	color:black;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Rate</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resource.qrc">
+                    <normaloff>:/resource/resource/facebook-like.png</normaloff>:/resource/resource/facebook-like.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="feedback_button">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color:rgb(0, 153, 255);
+	border-radius: 5px;
+	color:black;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Feedback</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resource.qrc">
+                    <normaloff>:/resource/resource/person-growth.png</normaloff>:/resource/resource/person-growth.png</iconset>
+                  </property>
+                 </widget>
                 </item>
                </layout>
               </item>
@@ -2035,7 +1691,7 @@ background-color:  rgb(0, 77, 128);
 </string>
                     </property>
                     <property name="text">
-                     <string>Account</string>
+                     <string>About</string>
                     </property>
                     <property name="icon">
                      <iconset resource="resource.qrc">
@@ -2114,6 +1770,9 @@ background-color:  rgb(0, 77, 128);
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
+               <property name="toolTip">
+                <string/>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -2142,6 +1801,9 @@ background-color:  rgb(0, 77, 128);
                </property>
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string/>
                </property>
                <property name="styleSheet">
                 <string notr="true"/>
@@ -2189,6 +1851,9 @@ background-color: none;</string>
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
+               <property name="toolTip">
+                <string/>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -2217,6 +1882,9 @@ background-color: none;</string>
                </property>
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string/>
                </property>
                <property name="styleSheet">
                 <string notr="true"/>
