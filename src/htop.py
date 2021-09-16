@@ -95,7 +95,7 @@ class MainWindow(QMainWindow):
 
     def setValue(self, sliderValue, labelPercentage, progressBarName, color, net_value=50, net=False):
         if net:
-            htmlText = """<p align="center"><span style=" font-size:50pt;">{VALUE}</span><span style=" font-size:40pt; vertical-align:super;"></span></p>"""
+            htmlText = """<p align="center"><span style=" font-size:45pt;">{VALUE}</span><span style=" font-size:40pt; vertical-align:super;"></span></p>"""
         else:
             htmlText = """<p align="center"><span style=" font-size:30pt;">{VALUE}</span><span style=" font-size:20pt; vertical-align:super;">%</span></p>"""
         labelPercentage.setText(htmlText.replace("{VALUE}", str(sliderValue)))

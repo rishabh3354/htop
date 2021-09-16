@@ -204,8 +204,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Roboto Thin")
         font.setPointSize(30)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.labelPercentageGPU_3.setFont(font)
         self.labelPercentageGPU_3.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
 "padding: 0px; background-color: none;")
@@ -284,8 +284,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Roboto Thin")
         font.setPointSize(30)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.labelPercentageCPU_5.setFont(font)
         self.labelPercentageCPU_5.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
 " padding: 0px; background-color: none;")
@@ -345,8 +345,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Roboto Thin")
         font.setPointSize(30)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.labelPercentageRAM_2.setFont(font)
         self.labelPercentageRAM_2.setStyleSheet("color: rgba(69, 182, 73, 1);\n"
 "padding: 0px; background-color: none;")
@@ -994,7 +994,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -1004,7 +1004,7 @@ class Ui_MainWindow(object):
         self.btn_minimize.setToolTip(_translate("MainWindow", "Minimize"))
         self.btn_close.setToolTip(_translate("MainWindow", "Close"))
         self.labelAplicationName_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt;\">NET </span><span style=\" font-size:11pt;\">SPEED</span></p></body></html>"))
-        self.labelPercentageGPU_3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:50pt; font-weight:600;\">25</span><span style=\" font-size:40pt; font-weight:600; vertical-align:super;\">%</span></p></body></html>"))
+        self.labelPercentageGPU_3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:45pt;\">25</span><span style=\" font-size:40pt; font-weight:600; vertical-align:super;\">%</span></p></body></html>"))
         self.labelCredits_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#eeeeec;\">KB/s</span></p></body></html>"))
         self.labelCredits_9.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt; color:#eeeeec;\">TEMP: </span><span style=\" font-size:9pt; color:#eeeeec;\">40ºC</span></p></body></html>"))
         self.labelAplicationName_9.setText(_translate("MainWindow", "<html><head/><body><p>CPU USAGE</p></body></html>"))

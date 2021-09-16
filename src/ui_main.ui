@@ -303,7 +303,7 @@ QPushButton:hover {
              <string notr="true">background-color: none;</string>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page_home">
              <property name="styleSheet">
@@ -464,8 +464,8 @@ QPushButton:hover {
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -473,7 +473,7 @@ QPushButton:hover {
 padding: 0px; background-color: none;</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; font-weight:600;&quot;&gt;25&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:45pt;&quot;&gt;25&lt;/span&gt;&lt;span style=&quot; font-size:40pt; font-weight:600; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -649,8 +649,8 @@ padding: 0px; background-color: none;</string>
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -795,8 +795,8 @@ padding: 0px; background-color: none;</string>
                        <font>
                         <family>Roboto Thin</family>
                         <pointsize>30</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
