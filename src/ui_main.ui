@@ -1851,7 +1851,7 @@ background-color:  rgb(0, 77, 128);
 background-color: none;</string>
                </property>
                <property name="text">
-                <string>HTOP GUI</string>
+                <string>SYS INFO</string>
                </property>
               </widget>
              </item>

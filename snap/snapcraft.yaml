@@ -2,8 +2,7 @@ name: htop-pro
 base: core18 # the base snap is the execution environment for this snap
 version: '2.0' # just for humans, typically '1.2+git' or '1.3.2'
 summary: Interactive system-monitor with Internet speed, Cpu and Ram usage utility
-description: |
-  A Light weight desktop application for Monitoring System with Internet speed, Cpu and RAM in cool graphics.
+description: A Light weight desktop application for Monitoring System with Internet speed, Cpu and RAM in cool graphics.
 grade: stable # must be 'stable' to release into candidate/stable channels  / before dev use devel
 confinement: strict # use 'strict' once you have the right plugs and slots / before dev use devmode
 

@@ -1044,5 +1044,5 @@ class Ui_MainWindow(object):
         self.setting_button.setText(_translate("MainWindow", "Settings"))
         self.monitor_button.setText(_translate("MainWindow", "Monitor"))
         self.account_button.setText(_translate("MainWindow", "About"))
-        self.label_title.setText(_translate("MainWindow", "HTOP GUI"))
+        self.label_title.setText(_translate("MainWindow", "SYS INFO"))
 import resource_rc

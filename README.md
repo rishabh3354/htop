@@ -1,8 +1,8 @@
 Summary: INTERNET SPEED MONITOR WITH CPU AND RAM USAGE UTILITY
 
-**HTOP GUI** is a Best GUI looking Application for **Monitoring Internet speed** with **System Monitor** Utility.
+**SYS INFO** is a Best GUI looking Application for **Monitoring Internet speed** with **System Monitor** Utility.
   
-**Main features of HTOP GUI:-**
+**Main features of SYS INFO:-**
 
 -   Realtime Internet speed indicator (Combine upload/download speed)
 -   RAM Usage moniter. ( Used percent, available, total memory)
