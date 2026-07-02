@@ -15,7 +15,7 @@ environment:
   SNAP_DESKTOP_RUNTIME: $SNAP/pyqt5-runtime-core22-lite
 
 apps:
-  htop:
+  htop-pro:
     command: bin/desktop-launch python3 $SNAP/htop.py
     plugs:
       - home
@@ -69,7 +69,7 @@ parts:
     plugin: dump
     source: snap_launcher/
 
-  htop:
+  htop-pro:
       plugin: python
       source: .
       python-packages:
